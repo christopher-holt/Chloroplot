@@ -1011,7 +1011,7 @@ PlotPlastidGenome <- function(plot.tables, save = TRUE, file.type = "pdf",
 
   if (organelle_type){
     graphics::text(0,0.10, sp_name, font=4, cex = 0.8 * text.size, col = info.color)
-    graphics::text(0,0.05, "Plastid Genome", font=4, cex = 0.8 * text.size, col = info.color)
+    graphics::text(0,0.05, "Mitochondrial Genome", font=4, cex = 0.8 * text.size, col = info.color)
   } else{
     graphics::text(0,0.05, sp_name, font=4, cex = 0.8 * text.size, col = info.color)
   }
@@ -1319,7 +1319,7 @@ PlotMitGenome <- function(plot.tables, save = TRUE, file.type = "pdf",
 
   # 3. Genome information
   n_trn <- sum(grepl("trn", gene_table$gene, perl = TRUE))
-  n_rrn <- sum(grepl("rrn", gene_table$gene, perl = TRUE))
+  n_rrn <- sum(grepl("ribosomal RNA", gene_table$gene, perl = TRUE))
   n_gene <- nrow(gene_table) - n_trn - n_rrn
 
   # 4. Generate plot
