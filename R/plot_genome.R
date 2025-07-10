@@ -1011,7 +1011,7 @@ PlotPlastidGenome <- function(plot.tables, save = TRUE, file.type = "pdf",
 
   if (organelle_type){
     graphics::text(0,0.10, sp_name, font=4, cex = 0.8 * text.size, col = info.color)
-    graphics::text(0,0.05, "Mitochondrial Genome", font=4, cex = 0.8 * text.size, col = info.color)
+    graphics::text(0,0.05, "Plastid Genome", font=4, cex = 0.8 * text.size, col = info.color)
   } else{
     graphics::text(0,0.05, sp_name, font=4, cex = 0.8 * text.size, col = info.color)
   }
@@ -1785,7 +1785,7 @@ PlotMitGenome <- function(plot.tables, save = TRUE, file.type = "pdf",
 
   if (organelle_type){
     graphics::text(0,0.10, sp_name, font=4, cex = 0.8 * text.size, col = info.color)
-    graphics::text(0,0.05, "Plastid Genome", font=4, cex = 0.8 * text.size, col = info.color)
+    graphics::text(0,0.05, "Mitochondrial Genome", font=4, cex = 0.8 * text.size, col = info.color)
   } else{
     graphics::text(0,0.05, sp_name, font=4, cex = 0.8 * text.size, col = info.color)
   }
